@@ -1,0 +1,9 @@
+img {
+    max-width: auto;
+    height: auto;
+  }
+
+body {
+    enable-background: url("Images/background.jpg");
+    background-size: 50%;
+  }
