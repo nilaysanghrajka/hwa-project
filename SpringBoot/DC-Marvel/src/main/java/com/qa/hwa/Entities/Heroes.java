@@ -1,5 +1,7 @@
 package com.qa.hwa.Entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Heroes {
