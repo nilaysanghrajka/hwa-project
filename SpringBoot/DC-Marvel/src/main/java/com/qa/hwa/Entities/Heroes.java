@@ -10,5 +10,8 @@ public class Heroes {
 	private int ID;
 	private String name;
 	private String alter_ego;
+	private String groups;
+	private String location;
+	private String occupation;
 	
 }
