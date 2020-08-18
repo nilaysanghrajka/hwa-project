@@ -1,18 +1,22 @@
 package com.qa.hwa.Entities;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="Heroes")
 public class Heroes {
 
 	@Id
+	@GeneratedValue
 	private int ID;
-	private String name;
-	private String alter_ego;
-	private String location;
-	private String occupation;
-	private String fkGroups_id;
+	private String Name;
+	private String Alter_ego;
+	private String Location;
+	private String Occupation;
+	private String fk_Groups_id;
 	
 	
 	public int getID() {
@@ -22,34 +26,34 @@ public class Heroes {
 		ID = iD;
 	}
 	public String getName() {
-		return name;
+		return Name;
 	}
 	public void setName(String name) {
-		this.name = name;
+		Name = name;
 	}
 	public String getAlter_ego() {
-		return alter_ego;
+		return Alter_ego;
 	}
 	public void setAlter_ego(String alter_ego) {
-		this.alter_ego = alter_ego;
+		Alter_ego = alter_ego;
 	}
 	public String getLocation() {
-		return location;
+		return Location;
 	}
 	public void setLocation(String location) {
-		this.location = location;
+		Location = location;
 	}
 	public String getOccupation() {
-		return occupation;
+		return Occupation;
 	}
 	public void setOccupation(String occupation) {
-		this.occupation = occupation;
+		Occupation = occupation;
 	}
-	public String getFkGroups_id() {
-		return fkGroups_id;
+	public String getFk_Groups_id() {
+		return fk_Groups_id;
 	}
-	public void setFkGroups_id(String fkGroups_id) {
-		this.fkGroups_id = fkGroups_id;
+	public void setFk_Groups_id(String fk_Groups_id) {
+		this.fk_Groups_id = fk_Groups_id;
 	}
 	
 }
