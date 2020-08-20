@@ -14,11 +14,11 @@ import com.qa.hwa.Services.TeamService;
 @RequestMapping("/Team")
 public class TeamController {
 
-	@Autowired
-	TeamService service;
-	
-	@GetMapping("/ListOfTeams")
-	public List<String> listTeams() {
-		return service.listteams();
-	}
+//	@Autowired
+//	TeamService service;
+//	
+//	@GetMapping("/ListOfTeams")
+//	public List<String> listTeams() {
+//		return service.listteams();
+//	}
 }

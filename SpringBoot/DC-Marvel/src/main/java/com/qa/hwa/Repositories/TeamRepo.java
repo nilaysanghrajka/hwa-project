@@ -11,9 +11,9 @@ import com.qa.hwa.Entities.Team;
 @Repository
 public interface TeamRepo extends JpaRepository<Team, Integer>{
 
-	@Query(value="Select * from Team",nativeQuery=true)
-	List<String> listTeams();
-	
+//	@Query(value="Select * from Team",nativeQuery=true)
+//	List<String> listTeams();
+//	
 //	@Query(value="Select * from Groups",nativeQuery=true)
 //	public List<String> listGroups();
 

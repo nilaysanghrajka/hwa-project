@@ -1,4 +1,4 @@
-INSERT INTO Characters (Name, Alter_ego, Location, Occupation, Side, Universe)
+INSERT INTO characters (name, alter_ego, location, occupation, side, universe)
 VALUES
 ('Batman', 'Bruce Wayne','Gotham', 'Business Man', 'Good', 'DC'),
 ('Lex Luthor','Lex Luthor','Smallville', 'Business Man', 'Good', 'DC'),

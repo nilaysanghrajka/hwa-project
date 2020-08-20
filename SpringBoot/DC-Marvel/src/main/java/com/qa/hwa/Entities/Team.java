@@ -6,39 +6,46 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Team")
+//@Table(name="Team")
 public class Team {
 
 	@Id
 	@GeneratedValue
-	private int TeamID;
-	private String TeamName;
-	private String TeamSide;
+	private int teamid;
+	private String teamname;
+	private String teamside;
 	
-	public Team(int teamID, String teamName, String teamSide) {
+	public Team() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Team(int teamid, String teamname, String teamside) {
 		super();
-		TeamID = teamID;
-		TeamName = teamName;
-		TeamSide = teamSide;
+		this.teamid = teamid;
+		this.teamname = teamname;
+		this.teamside = teamside;
 	}
-	public int getTeamID() {
-		return TeamID;
+	
+	public int getTeamid() {
+		return teamid;
 	}
-	public void setTeamID(int teamID) {
-		TeamID = teamID;
+	public void setTeamid(int teamid) {
+		this.teamid = teamid;
 	}
-	public String getTeamName() {
-		return TeamName;
+	public String getTeamname() {
+		return teamname;
 	}
-	public void setTeamName(String teamName) {
-		TeamName = teamName;
+	public void setTeamname(String teamname) {
+		this.teamname = teamname;
 	}
-	public String getTeamSide() {
-		return TeamSide;
+	public String getTeamside() {
+		return teamside;
 	}
-	public void setTeamSide(String teamSide) {
-		TeamSide = teamSide;
+	public void setTeamside(String teamside) {
+		this.teamside = teamside;
 	}
-
+	
 	
 }
+		
+		
