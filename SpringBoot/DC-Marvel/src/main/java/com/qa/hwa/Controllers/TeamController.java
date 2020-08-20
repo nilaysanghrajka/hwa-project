@@ -3,27 +3,22 @@ package com.qa.hwa.Controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.qa.hwa.Services.HeroServices;
+import com.qa.hwa.Services.TeamService;
+
 
 @RestController
-@RequestMapping("/Heroes")
-@CrossOrigin
-public class HeroController {
+@RequestMapping("/Team")
+public class TeamController {
 
 	@Autowired
-	HeroServices service;
+	TeamService service;
 	
-	@GetMapping("/ListOfHeroes")
-	public List<String> listHeroes() {
-		System.out.println("this works here");
-		return service.listheroes();
+	@GetMapping("/ListOfTeams")
+	public List<String> listTeams() {
+		return service.listteams();
 	}
-	
-	
-	
 }

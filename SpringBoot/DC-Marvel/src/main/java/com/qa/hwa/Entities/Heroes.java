@@ -18,6 +18,15 @@ public class Heroes {
 	private String Occupation;
 	private String fk_Groups_id;
 	
+	public Heroes(int iD, String name, String alter_ego, String location, String occupation, String fk_Groups_id) {
+		super();
+		ID = iD;
+		Name = name;
+		Alter_ego = alter_ego;
+		Location = location;
+		Occupation = occupation;
+		this.fk_Groups_id = fk_Groups_id;
+	}
 	
 	public int getID() {
 		return ID;
