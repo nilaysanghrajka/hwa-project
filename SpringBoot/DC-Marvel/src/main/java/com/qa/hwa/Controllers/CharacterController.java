@@ -56,4 +56,10 @@ public class CharacterController {
 		return new ResponseEntity<> (newChar, HttpStatus.CREATED);
 	}
 	
+	@PostMapping("/update/{id}")
+	public ResponseEntity<Characters> update(@RequestBody Characters newChar, @PathVariable int id) {
+		Characters updated = this.service.update(newChar, id);
+		System.out.println("This Updated " + id);
+		return new ResponseEntity<> (updated, HttpStatus.ACCEPTED);
+	}
 }
