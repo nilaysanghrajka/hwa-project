@@ -2,16 +2,15 @@ package com.qa.hwa.Entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-//@Table(name="Team")
 public class Team {
 
 	@Id
-	@GeneratedValue
-	private int teamid;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String teamname;
 	private String teamside;
 	
@@ -19,28 +18,33 @@ public class Team {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Team(int teamid, String teamname, String teamside) {
+	public Team(int id, String teamname, String teamside) {
 		super();
-		this.teamid = teamid;
+		this.id = id;
 		this.teamname = teamname;
 		this.teamside = teamside;
 	}
-	
-	public int getTeamid() {
-		return teamid;
+
+	public int getId() {
+		return id;
 	}
-	public void setTeamid(int teamid) {
-		this.teamid = teamid;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getTeamname() {
 		return teamname;
 	}
+
 	public void setTeamname(String teamname) {
 		this.teamname = teamname;
 	}
+
 	public String getTeamside() {
 		return teamside;
 	}
+
 	public void setTeamside(String teamside) {
 		this.teamside = teamside;
 	}
