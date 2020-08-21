@@ -1,20 +1,16 @@
 
-# Inventory Management System - QA Consultancy Individual Project
+# Hobby Web Application - QA Consultancy Individual Project
 
-This project links a Google Cloud Platform MySQL instance to a Java exetuble via JDBC, from which an inventory of items may be managed.
-The project is built on Maven using the Eclipse IDE, using JUnit & Mockito for testing purposes. 
+This project links was to create an API database of Comic Book Characters as I am a big collector for comic books.
+The project is built on Maven using the Eclipse IDE with Spring Tool Suite 4, using JUnit, Selenium & Mockito for testing purposes. 
 Version control was done using Git, with GitHub as host. 
 A CI Server was set up, managed by Jenkins, to analyse code pushed to GitHub using SonarQube. The artifacts were stored on Nexus.
 
-Folder containing Documentation includes presentation & Risk assessment.
-* [Trello](https://trello.com/b/drVMqO2w/qainventoryproject) - Kanban board
-
 ## Deploying the program
 
-1) Clone the repository to the desired client
-2) Open the project as a Maven project
-3) Link it to your MySQL instance by replacing the hard-coded IP-addresses
-4) You may now run it from your IDE as a Maven project, or use 
+1) Open the project as a Maven project
+2) Link it to your MySQL instance by replacing the hard-coded IP-addresses
+3) You may now run it from your IDE as a Maven project, or use 
 
 ```
 mvn clean install
@@ -112,8 +108,7 @@ Testing will drop the database and all information containing it! Be aware of th
 
 ## Authors
 
-* **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
-* **Korbinian Ring** - *all but first commit* - [KMRRingQA](https://github.com/KMRRingQA)
+* **Nilay Sanghrajka** - [nilaysanghrajka](https://github.com/nilaysanghrajka)
 
 ## License
 
