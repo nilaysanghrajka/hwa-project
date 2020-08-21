@@ -7,7 +7,7 @@ Version control was done using Git, with GitHub as host.
 A CI Server was set up, managed by Jenkins, to analyse code pushed to GitHub using SonarQube. The artifacts were stored on Nexus.
 
 #
-### creating a development environment
+### Creating a development environment
 
 You will need to install
 Maven, Java (Eclipse with Spring Tool), Git & Jenkins software (Also MySql if you want to run locally) and ensure they are up to date with the project.
