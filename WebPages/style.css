@@ -1,0 +1,84 @@
+img.DCLogo {
+  
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 20%;
+}
+
+img.MarvelLogo {
+   
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 20%;
+}
+
+h1 {
+    text-align: center ;
+    color:deepskyblue;
+}
+
+h3 {
+    text-align: center;
+    color: blue;
+}
+
+h4 {
+    color: yellowgreen;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    color: aliceblue;
+}
+
+body {
+    background: rgb(0,0,0);
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 33%, rgba(226,0,0,1) 100%);
+}
+
+li a {
+    display: block;
+    text-align: center;
+    color: aqua;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(65, 12, 134);
+    color: white;
+}
+
+td,th {
+  border: black solid 1px;
+  padding: 5px;
+}
+
+td {
+  background-color: teal;
+  color: white;
+}
+
+th {
+  background-color: blue;
+  color: white;
+  font-family: georgia;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.form-group {
+    color: mediumspringgreen;
+    align-items: center;
+}

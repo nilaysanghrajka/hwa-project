@@ -1,0 +1,17 @@
+CREATE TABLE Characters (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(40) NOT NULL,
+  alter_ego VARCHAR(40) NOT NULL,
+  location VARCHAR(40) NOT NULL,
+  occupation VARCHAR(40) NOT NULL,
+  side VARCHAR (40) NOT NULL,
+  universe VARCHAR (40) NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Team (
+  id INT NOT NULL AUTO_INCREMENT,
+  teamname VARCHAR(40) NOT NULL,
+  teamside VARCHAR(40) NOT NULL,
+  PRIMARY KEY (ID)
+);
