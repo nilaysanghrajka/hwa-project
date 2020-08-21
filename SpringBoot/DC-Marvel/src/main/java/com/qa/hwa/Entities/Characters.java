@@ -21,6 +21,17 @@ public class Characters {
 	public Characters() {
 		// TODO Auto-generated constructor stub
 	}
+		
+	public Characters(String name, String alterEgo, String location, String occupation, String side, String universe) {
+		super();
+		this.name = name;
+		this.alterEgo = alterEgo;
+		this.location = location;
+		this.occupation = occupation;
+		this.side = side;
+		this.universe = universe;
+	}
+
 	public Characters(int id, String name, String alterEgo, String location, String occupation, String side,
 			String universe) {
 		super();

@@ -84,7 +84,8 @@ document.querySelector("#addCharacter").addEventListener("submit", function (e) 
     })
     .catch(function (error) {
       console.log("Request failed", error);
-    }); 
+    });
+    window.location.reload(true);
 });
 
   fetfetch("http://localhost:8701/Characters/update/${id}", {

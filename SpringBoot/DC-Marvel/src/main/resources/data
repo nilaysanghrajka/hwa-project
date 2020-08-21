@@ -1,3 +1,12 @@
+INSERT INTO Team (TeamName, TeamSide)
+VALUES
+('No Team', 'Neutral'),
+('Justice League', 'Good'),
+('Suicide Squad', 'Bad'),
+('Avengers','Good'),
+('Injustice League', 'Bad'),
+('Rogues','Bad');
+
 INSERT INTO characters (name, alter_ego, location, occupation, side, universe)
 VALUES
 ('Batman', 'Bruce Wayne','Gotham', 'Business Man', 'Good', 'DC'),

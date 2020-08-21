@@ -18,6 +18,12 @@ public class Team {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Team(String teamname, String teamside) {
+		super();
+		this.teamname = teamname;
+		this.teamside = teamside;
+	}
+
 	public Team(int id, String teamname, String teamside) {
 		super();
 		this.id = id;
@@ -48,8 +54,7 @@ public class Team {
 	public void setTeamside(String teamside) {
 		this.teamside = teamside;
 	}
-	
-	
+		
 }
 		
 		

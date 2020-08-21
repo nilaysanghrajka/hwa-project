@@ -12,9 +12,9 @@ fetch("http://localhost:8701/Team/ListAll", {
     response.json().then(function (data) {
       console.log(data);
       for (let i = 0; i < data.length; i++) {
-        console.log("ID", data[i].teamid);
-        console.log("Name", data[i].teamname);
-        console.log("Side", data[i].teamside);
+        console.log("TeamID", data[i].id);
+        console.log("TeamName", data[i].teamname);
+        console.log("TeamSide", data[i].teamside);
 
         let row = `<tr><th scope="row">${data[i].id}</th>
         <td>${data[i].teamname}</td>
@@ -22,7 +22,7 @@ fetch("http://localhost:8701/Team/ListAll", {
         <td><a href="http://localhost:8701/Team/remove/${data[i].id}">delete</a></td>
         </tr>`;
 
-        document.getElementById("charList").innerHTML += row;
+        document.getElementById("teamList").innerHTML += row;
       }
     });
   })
@@ -33,12 +33,12 @@ fetch("http://localhost:8701/Team/ListAll", {
 
 
 
-document.querySelector("#addCharacter").addEventListener("submit", function (e) {
+document.querySelector("#addTeam").addEventListener("submit", function (e) {
   e.preventDefault();
-  let x = document.querySelector("#addCharacter").elements;
+  let x = document.querySelector("#addTeam").elements;
 
-  let teamname = x["nameinput"].value;
-  let teamside = x["sideinput"].value;
+  let teamname = x["tnameinput"].value;
+  let teamside = x["tsideinput"].value;
 
   console.log(teamname);
   console.log(teamside);
@@ -65,6 +65,7 @@ document.querySelector("#addCharacter").addEventListener("submit", function (e) 
     .catch(function (error) {
       console.log("Request failed", error);
     }); 
+    window.location.reload(true);
 });
 
   fetfetch("http://localhost:8701/Team/update/${id}", {
