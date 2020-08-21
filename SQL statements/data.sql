@@ -7,21 +7,16 @@ VALUES
 ('Injustice League', 'Bad'),
 ('Rogues','Bad');
 
-INSERT INTO Heroes (Name, Alter_ego, Location, Occupation, fk_TeamID)
+INSERT INTO characters (name, alter_ego, location, occupation, side, universe)
 VALUES
-('Batman', 'Bruce Wayne','Gotham', 'Business Man', 2),
-('Superman','Clark Kent','Metropolis', 'Reporter', 2),
-('Ironman','Tony Stark','New York', 'Business Man', 4),
-('Deadpool', 'Wade Wilson','Canada', 'Mercenary', 1);
-
-INSERT INTO Villain (Name, Alter_ego, Location, Occupation, fk_TeamID)
-VALUES
-('Zoom','Hunter Zoloman','Keystone', 'Scientist', 3),
-('Captain Cold','Leonard Snart','Gotham', 'Professional Criminal', 5),
-('Lex Luthor','Lex Luthor','Smallville', 'Business Man', 5),
-('Harley Quinn','Harleen Quinzel','Gotham', 'Pyschiatrist', 3);
-
-INSERT INTO Nemesis (fk_Hero_ID, fk_Villain_ID)
-VALUES
-(2, 3),
-(1, 4);
+('Batman', 'Bruce Wayne','Gotham', 'Business Man', 'Good', 'DC'),
+('Lex Luthor','Lex Luthor','Smallville', 'Business Man', 'Good', 'DC'),
+('Harley Quinn','Harleen Quinzel','Gotham', 'Pyschiatrist','Good', 'DC'),
+('Captain America','Steve Rogers','New York', 'War Vetern', 'Good', 'Marvel'),
+('Ironman','Tony Stark','New York', 'Business Man', 'Good', 'Marvel'),
+('Zoom','Hunter Zoloman','Keystone', 'Scientist', 'Good', 'DC'),
+('Captain Cold','Leonard Snart','Gotham', 'Professional Criminal','Good', 'DC'),
+('Mistique','Raven Darkholme','New York', 'Private Investigator','Bad', 'Marvel'),
+('Superman','Clark Kent','Metropolis', 'Reporter', 'Good', 'DC'),
+('Zoom','Hunter Zoloman','Keystone', 'Scientist', 'Good', 'DC'),
+('Deadpool', 'Wade Wilson','Canada', 'Mercenary', 'Good', 'Marvel');

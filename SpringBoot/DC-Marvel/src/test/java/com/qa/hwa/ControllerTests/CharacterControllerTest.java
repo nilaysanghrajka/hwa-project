@@ -3,53 +3,42 @@ package com.qa.hwa.ControllerTests;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Spy;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-
+import com.qa.hwa.Controllers.CharacterController;
 import com.qa.hwa.Entities.Characters;
 import com.qa.hwa.Repositories.CharacterRepo;
 import com.qa.hwa.Repositories.TeamRepo;
+import com.qa.hwa.Services.CharacterServices;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@RunWith(SpringRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 public class CharacterControllerTest {
 
-	@Autowired
-	private MockMvc mvc;
+	@Mock
+	private CharacterServices characterservices;
 	
-	@Autowired
-	private CharacterRepo crepo;
-	
-	@Autowired
-	private TeamRepo trepo;
-	
-	private Characters testChar = new Characters("Flash", "Barry Allen", "Central", "Forensics Scientist", "Good", "DC");
-	private Characters newtestchar = new Characters("Flash", "Bart Allen", "Central", "Student", "Good", "DC");
-	private Characters testcharwithId;
-	int id;
-	
-	
-	@Before
-	public void init() {
-		this.crepo.deleteAll();
-		this.trepo.deleteAll();
-		this.testChar.setId(id);
-		this.testcharwithId=this.crepo.save(testChar);
-		this.id=this.testcharwithId.getId();
-		this.newtestchar.setId(id);
-	}
+	@Spy
+	@InjectMocks 
+	private CharacterController charactercontroller;
 	
 	@Test
-	public void testCreate() throws Exception {
-		
+	public void ListAllTest() {
+		Characters characters = new Characters("Flash", "Barry Allen", "Central", "Forensic Scientist", "Good", "DC");
+		Characters newcharacters = new Characters("Flash", "Bart Allen", "Central", "Student", "Good", "DC");
+		Characters savedcharacters = new Characters(1, "Batman", "Bruce Wayne", "Gotham", "Business Man", "Good", "DC");
 	}
 
-
+	
 
 	
 }
