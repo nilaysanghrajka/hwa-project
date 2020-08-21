@@ -19,9 +19,14 @@ h1 {
     color:deepskyblue;
 }
 
-h3 {
+h3.title {
     text-align: center;
     color: blue;
+}
+
+h3.line {
+    text-align: center;
+    color: white;
 }
 
 h4 {

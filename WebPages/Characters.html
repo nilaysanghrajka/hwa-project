@@ -35,41 +35,59 @@
   </div>
 
   <div>
-    <table class="allteam">
+    <table class="allchar">
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">Team Name</th>
-          <th scope="col">Team Side</th>
+          <th scope="col">Name</th>
+          <th scope="col">Alter Ego</th>
+          <th scope="col">Location</th>
+          <th scope="col">Occupation</th>
+          <th scope="col">Side</th>
+          <th scope="col">Universe</th>
           <th scope="col"></th>
         </tr>
       </thead>
-      <tbody id="teamList"></tbody>
+      <tbody id="charList"></tbody>
     </table>
   </div>
 
   <div>
-    <h4>Enter New Team Here:</h4>
+    <h4>Enter New Character Here:</h4>
     <br />
-    <form id="addTeam">
+    <form id="addCharacter">
       <div class="form-group">
-        <label for="tnameinput">Name</label>
-        <input type="text" class="form-control" id="tnameinput" />
+        <label for="nameinput">Name</label>
+        <input type="text" class="form-control" id="nameinput" />
       </div>
-      
       <div class="form-group">
-        <label for="tsideinput">Side</label>
-        <input type="text" class="form-control" id="tsideinput" />
+        <label for="altinput">Alter Ego</label>
+        <input type="text" class="form-control" id="altinput" />
       </div>
-    
+      <div class="form-group">
+        <label for="locinput">Location</label>
+        <input type="text" class="form-control" id="locinput" />
+      </div>
+      <div class="form-group">
+        <label for="occinput">Occupation</label>
+        <input type="text" class="form-control" id="occinput" />
+      </div>
+      <div class="form-group">
+        <label for="sideinput">Side</label>
+        <input type="text" class="form-control" id="sideinput" />
+      </div>
+      <div class="form-group">
+        <label for="uniinput">Universe</label>
+        <input type="text" class="form-control" id="uniinput" />
+      </div>
+
       <button type="submit" class="button">Submit</button>
     </form>
   </div>
 
-
   <body>
 
-    <script src="listteam.js"></script>
+    <script src="listchar.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
