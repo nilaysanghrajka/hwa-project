@@ -1,4 +1,3 @@
-Coverage: 83.1% SonarQube, 93.5% JUnit 
 
 # Inventory Management System - QA Consultancy Individual Project
 
