@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.qa</groupId>
 	<artifactId>DC-Marvel</artifactId>
-	<version>1.0.0.</version>
+	<version>1.0.0</version>
 	<name>DC-Marvel</name>
 	<description>hwa project for Spring Boot</description>
 
